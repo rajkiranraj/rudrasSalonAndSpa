@@ -1,0 +1,32 @@
+#main-content {
+  display: none;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 9999;
+}
+
+.loader {
+  --size: min(250px, 80vw);
+  --duration: 2s;
+  --logo-color: grey;
+  --background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 0.2) 0%,
+    rgba(100, 100, 100, 0.2) 100%
+  );
+  height: var(--size);
+  aspect-ratio: 1;
+  position: relative;
+}
+
+/* ...rest of existing loader styles... */
